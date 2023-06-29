@@ -1,0 +1,186 @@
+/* Global Style */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container2{
+    width: 90%;
+    margin: auto;
+    border: 1px solid #dddddd;
+    padding:2px;
+
+}
+.baslik{
+
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  /* width: 90%; */
+  /* margin: auto; */
+  border: 1px solid #dddddd;
+  padding: 1px;
+}
+       
+ 
+
+.golge{
+  text-align: center;
+  text-shadow: 2px 2px 5px red;
+}
+
+
+      /* Button Start */
+    
+#glb .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 3px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      #glb .button2 {background-color: #008CBA;} /* Blue */
+      #glb .button3 {background-color: #f44336;} /* Red */ 
+      #glb .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+      #glb .button5 {background-color: #555555;} /* Black */
+      /* Button End */
+/* Global Style End */
+
+
+/* ***************** index.php style     *****************  */
+/* Table Start */
+
+#table_index {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  border-collapse: collapse;   
+  font-size: 14px;
+  /* width: 90%; */
+  margin: 20px auto;
+}
+
+#table_index td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding-left: 3px;
+  /* padding-right: px; */
+}
+
+#table_index th {
+  background-color: #e9ae42;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px 3px;
+}
+
+
+#table_index tr:nth-child(even) {
+  background-color: #fcefb6;
+}
+
+#table_index tr:hover {background-color: #c7e908;}
+
+/* Table End */
+
+    
+#table_index .num {
+  text-align: right;
+  padding-right: 5px;
+   }
+   
+      /* Button Start */
+    
+      #table_index .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 3px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      #table_index .button2 {background-color: #008CBA;} /* Blue */
+      #table_index .button3 {background-color: #f44336;} /* Red */ 
+      #table_index .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+      #table_index .button5 {background-color: #555555;} /* Black */
+      /* Button End */
+
+/* ***************** index.php style End *****************  */
+
+/* ***************** har_list.php style  *****************  */
+
+/* Table Start */
+
+#table_har_list {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;   
+  font-size: 14px;
+  /* width: 90%; */
+  margin: 20px auto;
+}
+
+#table_har_list td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding-left: 3px;
+  /* padding-right: px; */
+}
+
+#table_har_list th {
+  background-color: #e942e9;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px 3px;
+}
+
+
+#table_har_list tr:nth-child(even) {
+  background-color: #fac7ef;
+}
+
+#table_har_list tr:hover {background-color: #f1ee0e;}
+
+/* Table End */
+
+
+
+#table_har_list .num {
+  text-align: right;
+  padding-right: 5px;
+   }
+   
+      /* Button Start */
+    
+      #table_har_list .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 3px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      #table_har_list .button2 {background-color: #008CBA;} /* Blue */
+      #table_har_list .button3 {background-color: #f44336;} /* Red */ 
+      #table_har_list .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+      #table_har_list .button5 {background-color: #555555;} /* Black */
+      /* Button End */
+
+/* ***************** har_list.php style End  *****************  */
+
