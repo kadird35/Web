@@ -1,5 +1,7 @@
 <?php  require_once '_header.php'?>
 
+<?php  require_once 'guncelle.php'?>
+
 <?php
   
 $result = mysqli_query($baglan,"SELECT *from carikrt ORDER BY ckod");

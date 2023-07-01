@@ -16,6 +16,8 @@ if (mysqli_num_rows($Qcarikrt) > 0) {
 
 <div class="container2">
 <div class="baslik"  id="glb" >
+  FATURA KAYIT EKRANI
+  <br>
 
     Cari Kodu  : <?php echo $row["ckod"] ?> <br>
     Cari İsim  : <?php echo $row["cisim"] ?> <br>

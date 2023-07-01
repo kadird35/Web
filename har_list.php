@@ -4,7 +4,7 @@ $id = $_GET['id'];
 
 //selecting data associated with this particular id
 $Sonuc_carihrk = mysqli_query($baglan,
-"SELECT carihrk.id,carihrk.tarih,carihrk.belge_no,kayit_tipi.kaytip_adi,carihrk.vadesi,carihrk.aciklama,carihrk.borc,carihrk.alacak FROM carihrk,kayit_tipi WHERE (carihrk.ckod_id=$id) AND (carihrk.kayit_tip=kayit_tipi.kaytip_id)");
+"SELECT carihrk.id,carihrk.tarih,carihrk.belge_no,kayit_tipi.kaytip_adi,carihrk.vadesi,carihrk.aciklama,carihrk.borc,carihrk.alacak FROM carihrk,kayit_tipi WHERE (carihrk.ckod_id=$id) AND (carihrk.kayit_tip=kayit_tipi.kaytip_id) ORDER BY carihrk.tarih");
 
 
 
@@ -20,8 +20,9 @@ if (mysqli_num_rows($Sonuc_carikrt) > 0) {
 <div class="container2">
 <div class="baslik"  id="glb" >
    <?php echo "<a href='fatura.php?id=$row[id]' class='button'>Fatura</a>" ?> 
-    <a href="kasa.php" class="button">Kasa</a>
-    <a href="cekler.php" class="button">Çekler</a>
+   <?php echo "<a href='kasa.php?id=$row[id]' class='button'>Kasa</a>" ?> 
+   <?php echo "<a href='cekler.php?id=$row[id]' class='button'>Çekler</a>" ?> 
+
 
     <br>
     Cari Kodu  : <?php echo $row["ckod"] ?> <br>
