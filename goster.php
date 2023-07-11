@@ -1,4 +1,4 @@
-<?php  require_once '_header.php'?>
+<?php  require_once 'partials/header.php'?>
 
 <?php
   
@@ -70,4 +70,4 @@ $ckod_id= $fld['ckod_id'];
 <?php 
 
     ?>
-<?php  require_once '_footer.php';?>   
+<?php  require_once 'partials/footer.php';?>   

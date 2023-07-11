@@ -1,4 +1,4 @@
-<?php  require_once '_header.php'?>
+<?php  require_once 'partials/header.php'?>
 
 <?php  require_once 'guncelle.php'?>
 
@@ -7,19 +7,20 @@
 $result = mysqli_query($baglan,"SELECT *from carikrt ORDER BY ckod");
 
 ?>
-    <div class="container2">
-        <div class="baslik">
-            <p class="golge">Cari Genel Durum</p>
+<div class="container mt-6">
+    <div class="row">
+    <h1 class="golge">Cari Genel Durum</h1>
+  
+    </div>
+    <div class="row">
 
-            
-        </div>
 
 
     
-    <table id="table_index">
+    <table class="table_index">
         <tr>
-            <th style="width: 100px;">Cari Kodu</td>
-            <th style="width: 350px;">Cari İsim</td>
+            <th style="width: 120px;">Cari Kodu</td>
+            <th style="width: 420px;">Cari İsim</td>
             <th style="width: 150px;">Borç Toplamı</td>
             <th style="width: 150px;">Alacak Toplamı</td>
             <th style="width: 150px;">Bakiye</td>
@@ -42,9 +43,13 @@ while($res = mysqli_fetch_array($result)) {
     echo "<td class='num';>".$formatBT."</td>";	
     echo "<td class='num';>".$formatAT."</td>";	
     echo "<td class='num';>".$formatBK."</td>";    
-    echo "<td><a class='button' href=\"har_list.php?id=$res[id]\">Detay</a></td>";	
+    echo "<td><a class='btn btn-danger' href=\"har_list.php?id=$res[id]\">Detay</a></td>";	
 echo "</tr>"; 	
 } ?>
     </table>
 </div>
-<?php  require_once '_footer.php';?>   
+
+    </div>
+
+
+<?php  require_once 'partials/footer.php';?>   

@@ -1,4 +1,4 @@
-<?php require_once '_header.php';
+<?php require_once 'partials/header.php';
 
 
 $id = $_GET['id'];

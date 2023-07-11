@@ -1,4 +1,4 @@
-<?php require_once '_header.php';
+<?php require_once 'partials/header.php';
 
 
 $id = $_GET['id'];
@@ -131,4 +131,4 @@ if(isset($_POST['kaydet'])) {
             } 
             ?>     
         
-<?php  require_once '_footer.php';?>
+<?php  require_once 'partials/footer.php';?>

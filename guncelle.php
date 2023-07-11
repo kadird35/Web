@@ -1,4 +1,4 @@
-<?php  require_once '_header.php'?>
+<?php  require_once 'partials/dbconn.php'?>
 
 <?php
 
