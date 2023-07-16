@@ -10,9 +10,9 @@
 <body>
 
 <ul class="topnav">
-  <li><a class="active" href="index.php">Ana Sayfa</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li class="right"><a href="#about">About</a></li>
+  <li><a class="active" href="index.php">Cari Program</a></li>
+  <li><a href="index.php">Ana Sayfa</a></li>
+  <li><a href="#contact">İletişim</a></li>  
+  <li class="right"><a href="#about">Hakkımızda</a></li>
 </ul>
 <div class="container mt-6">

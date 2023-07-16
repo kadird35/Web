@@ -28,8 +28,6 @@ body {margin: 0;
 .mt-5 {margin-top: 50px;}
 .mt-6 {margin-top: 60px;}
 
-
-
 .mb-1 {margin-bottom: 10px;}
 .mb-2 {margin-bottom: 20px;}
 .mb-3 {margin-bottom: 30px;}
@@ -44,6 +42,8 @@ body {margin: 0;
 .ml-2 {margin-left: 20px;}
 .ml-3 {margin-left: 30px;}
 .ml-4 {margin-left: 40px;}
+
+/***********************************************************************/
 
 .p-1 {padding: 10px;}
 .p-2 {padding: 20px;}
@@ -70,6 +70,8 @@ body {margin: 0;
 .pl-3 {padding-left: 30px;}
 .pl-4 {padding-left: 40px;}
 
+/***********************************************************************/
+
 .col-05 {float: left; width: 5%; margin-top: 6px;}
 .col-10 {float: left; width: 10%; margin-top: 6px;}
 .col-15 {float: left; width: 15%; margin-top: 6px;}
@@ -89,6 +91,8 @@ body {margin: 0;
 .col-85 {float: left; width: 85%; margin-top: 6px;}
 .col-90 {float: left; width: 90%; margin-top: 6px;}
 
+/***********************************************************************/
+
 .bg-primary {background-color: #007bff;}
 .bg-info {background-color: #17a2b8;}
 .bg-danger {background-color: #dc3545;}
@@ -97,6 +101,8 @@ body {margin: 0;
 .bg-secondary {background-color: #6c757d;}
 .bg-dark {background-color: #343a40;}
 .bg-light {background-color: #f8f9fa;}
+
+/***********************************************************************/
 
 .cl-primary {color: #007bff;}
 .cl-info {color: #17a2b8;}
@@ -107,6 +113,8 @@ body {margin: 0;
 .cl-dark {color: #343a40;}
 .cl-light {color: #f8f9fa;}
 
+/***********************************************************************/
+
 .row::after {
   content: "";
   display: table;
@@ -116,7 +124,8 @@ body {margin: 0;
 .fnt-num{font-family: "Lucida Console", "Courier New", monospace;}
 
 
-
+/***********************************************************************/
+/* Button */
 
 .btn {
   padding: 2px 4px;
@@ -139,6 +148,7 @@ body {margin: 0;
 .btn-secondary {background-color: #6c757d;color: #f2f2f2}
 .btn-dark {background-color: #343a40;color: #f2f2f2}
 
+/* Button End */
 
 /* Border Style */
 

@@ -91,25 +91,23 @@ while($res = mysqli_fetch_array($Sonuc_carihrk)) {
 </table>
 </div>
 
-<div class="row">
-<div class="col-75">
+<div class="row bg-info">
+<div class="col-80">
 
 </div>
-<div class="col-25">
+<div class="col-20">
 
 
 <?php
 
-$sql3 =mysqli_query($baglan, "SELECT ckod_id, SUM(borc) AS borc_,SUM(alacak) AS alacak_, SUM(borc-alacak) AS bakiye_ FROM carihrk GROUP BY ckod_id");
+$sql3 =mysqli_query($baglan, "SELECT SUM(carihrk.borc) AS borc_, SUM(carihrk.alacak) AS alacak_, SUM(carihrk.borc-carihrk.alacak) AS bakiye_ FROM carihrk WHERE carihrk.ckod_id=$id");
 
 if (mysqli_num_rows($sql3) > 0) {
 while($kay=mysqli_fetch_assoc($sql3)){
 
-$ckod_id=$kay['ckod_id'];
-$ckod_id=$id;
-
 $borc_t=number_format($kay['borc_'],2);
 $alacak_t=number_format($kay['alacak_'],2);
+$bakiye_t=number_format($kay['bakiye_'],2);
 
 
 
@@ -120,18 +118,18 @@ $alacak_t=number_format($kay['alacak_'],2);
 ?>
 
 
-<table class="table_har_list">
-    <tr>
-      <td style="width: 100px;">Toplam Borç : </td>
-      <td class="num" style="width: 100px;"><?php echo $borc_t ?></td>
+<table>
+    <tr style="border: 1px solid;">
+      <td class="tar" style="width: 120px;">Toplam Borç : </td>
+      <td class="tar" style="width: 100px;"><?php echo $borc_t ?></td>
     </tr>
     <tr>
-      <td style="width: 100px;">Toplam Alacak :</td>
-      <td class="num" style="width: 100px;"><?php echo $alacak_t?></td>
+      <td class="tar" style="width: 120px;">Toplam Alacak :</td>
+      <td class="tar" style="width: 100px;"><?php echo $alacak_t?></td>
     </tr>
     <tr>
-      <td>Bakiye :</td>
-      <td><?php echo $borc_t-$alacak_t?></td>
+      <td class="tar" style="width: 120px;">Bakiye :</td>
+      <td class="tar" style="width: 100px;"><?php echo $bakiye_t?></td>
     </tr>
 
 </table>
